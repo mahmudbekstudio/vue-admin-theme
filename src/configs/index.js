@@ -4,23 +4,9 @@ const settings = {
     defaultPage: 'dashboard'
 };
 
-function Config(defaultSettings) {
-    this.settings = null;
-    this.instance = null;
-
-    return (() => {
-        return this;
-    })();
-
-
-    static getInstance(settings) {
-        window.console.log('every');
-        if(!Config.instance) {
-            window.console.log('once');
-            Config.instance = new Config(settings);
-        }
-
-        return Config.instance;
+class Config {
+    constructor(settings) {
+        this.settings = settings;
     }
 
     get(key, defaultValue = null) {
@@ -32,15 +18,4 @@ function Config(defaultSettings) {
     }
 }
 
-let Config = (function(settings) {
-    //
-})(settings);
-
-export default (function() {
-    let instance = null;
-    let instanceClass = function() {
-        //
-    };
-
-    return instan
-})(settings)
+export default new Config(settings);

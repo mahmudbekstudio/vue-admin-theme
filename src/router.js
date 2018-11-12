@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import routes from './modules/routes'
-import config from './configs'
-console.log('2');
-console.log(config.get('defaultPage'));
+import mixins from './mixins'
+window.console.log(mixins.get('router', ['csd', 'bsd']));
 
 Vue.use(Router);
 
