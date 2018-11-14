@@ -12,4 +12,11 @@
         //
     }
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+    .empty-layout {
+        height: 100%;
+        .v-content {
+            height: 100%;
+        }
+    }
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <Empty>
+    <Empty class="layout-main">
         <template slot="header">
             <Navigation></Navigation>
             <Header></Header>

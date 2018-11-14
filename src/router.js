@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import routes from './modules/routes'
-import mixins from './mixins'
-window.console.log(mixins.get('router', ['csd', 'bsd']));
+//import mixins from './mixins'
+//window.console.log(mixins.get('router', ['csd', 'bsd']));
 
 Vue.use(Router);
 
