@@ -1,7 +1,7 @@
 <template>
     <v-toolbar app>
         <v-toolbar-side-icon @click.stop="toggleNavigation"></v-toolbar-side-icon>
-        <button @click="toggleNavigation">ok</button></v-toolbar>
+    </v-toolbar>
 </template>
 <script>
     export default {

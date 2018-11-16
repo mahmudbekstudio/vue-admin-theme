@@ -1,7 +1,9 @@
 <template>
     <Empty class="layout-centered">
-        <v-container fluid>
-            <slot></slot>
+        <v-container fluid fill-height>
+            <v-layout align-center justify-center>
+                <slot></slot>
+            </v-layout>
         </v-container>
         <template slot="footer">
             <Footer></Footer>

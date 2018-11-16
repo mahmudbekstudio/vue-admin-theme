@@ -16,6 +16,8 @@
             <v-list-tile
                     v-for="item in items"
                     :key="item.title"
+                    @click="$router.push(item.route)"
+                    :class="{'active-item': $route.name === item.route.name}"
             >
                 <v-list-tile-action>
                     <v-icon>{{ item.icon }}</v-icon>
@@ -29,13 +31,11 @@
     </v-navigation-drawer>
 </template>
 <script>
+    import navigationList from '@/configs/navigation';
     export default {
         data () {
             return {
-                items: [
-                    { title: 'Home', icon: 'dashboard' },
-                    { title: 'About', icon: 'question_answer' }
-                ],
+                items: navigationList,
                 right: null
             }
         },
@@ -64,3 +64,10 @@
         }
     }
 </script>
+<style scoped lang="scss">
+    .active-item {
+        a {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+</style>

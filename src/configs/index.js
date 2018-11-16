@@ -1,7 +1,8 @@
 import {get as getValue, set as setValue} from 'lodash'
 
 const settings = {
-    defaultPage: 'dashboard'
+    defaultPage: 'dashboard',
+    notFound: 'not-found'
 };
 
 class Config {

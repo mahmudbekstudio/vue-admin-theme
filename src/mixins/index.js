@@ -1,9 +1,11 @@
-import router from './router'
-import component from './component'
+import router from './router';
+import component from './component';
+import changeLayout from './change-layout';
 
 const mixinsList = {
     router,
-    component
+    component,
+    changeLayout
 };
 
 class Mixins {
